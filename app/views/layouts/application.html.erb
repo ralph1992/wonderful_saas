@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>WonderfulSaas</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <title>Dev Match</title>
+ <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
@@ -16,6 +16,11 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
+      <%= link_to root_path, class: 'navbar-brand' do %>
+       <i class="fa fa-users"></i>
+       Dev Match
+       <% end %>
+
       <%= link_to 'SaaS', root_path, class: 'navbar-brand' %>
     </div>
     <div class="collapse navbar-collapse" id="main-nav-collapse">
